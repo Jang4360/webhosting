@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url("./global.css");
+html,body{
+    height:100%;
+}
+body{
+    background-color: var(--backgroundpurple);
+}
+:root{
+    --purple:#6644b8;
+    --darkpurple: #37274b;
+    --backgroundpurple:#120522;
+    --border:#ffffff80;
+}
+.profile{
+    display:flex;
+    justify-content: center;
+}
+.user{
+    padding:20px 10px;
+    flex-direction: column;
+}
+.user__img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+.user__id{
+    padding-top:0.3rem;
+    font-size: 1rem;
+    color:white;
+}
+.addBtn{
+    background-color: grey;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+.addBtn span{
+    color:white;
+    transform:translateX(0.3rem) translateY(0.3rem);
+    font-size:4rem;
+}
+.continueWatch{
+    margin-bottom:25px;
+    padding-bottom: 10px;
+    padding:0 20px;
+}
+.continueWatch__header{
+    margin-bottom: 10px;
+    color:white;
+}
+.continueWatch img{
+    width:16rem;
+    height:8rem;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.continueWatch ul{
+    list-style: none;
+    display:flex;
+    overflow-x: auto;
+    align-items: center;
+}
+.continueWatch li{
+    margin-left:5px;
+}
+.continueWatch__movie{
+    background-color: var(--darkpurple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+    border-radius: 25px;
+}
+.continueWatch__title{
+    color:white;
+    display:block;
+    margin:2px 0;
+}
+
+.wishlist{
+    padding:20px;
+}
+.wishlist__header{
+    color:white;
+}
+.wishlist ul{
+    overflow-y:auto;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+}
+.wishlist li{
+    margin-bottom:5px;
+}
+.wishlist__list{
+    display:flex;
+    background-color: var(--darkpurple);
+    padding:5px;
+    border-radius: 25px;
+}
+.wishlist__img img{
+    width:5rem;
+    height:5rem;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.wishlist__content{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+
+}
+.wishlist__title{
+    color:white;
+    font-size:1.4rem;
+}
+.wishlist__text{
+    color:white;
+    font-size:0.9rem;
+}
+.wishlist__click{
+    padding:1rem 0.5rem;
+}
+.wishlist__click span{
+    background-color: var(--purple);
+    color:white;
+    border-radius: 50%;
+    opacity: 0.9;
+    font-size:3rem;
+}
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:40px;
+    width:80px;
+    background-color: grey;
+    opacity:0.8;
+    border-radius:0 10px 0 0;
+    position:fixed;
+    bottom:0;
+}
+
+.nav span{
+    color:black;
+}
+@media(min-width:768px){
+    body{
+        padding:0 10vw;
+    }
+}
